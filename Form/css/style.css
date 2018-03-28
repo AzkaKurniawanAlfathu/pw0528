@@ -17,3 +17,7 @@ form{
 	margin: 40px auto;
 	padding: 30px;
 }
+.from input{
+	border: none;
+	border-bottom: 1px solid;
+}
