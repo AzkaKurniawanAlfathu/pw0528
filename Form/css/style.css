@@ -12,7 +12,6 @@ h1{
 	padding-top: 5%;
 	padding-left: 20%;
 }
-
 form{
 	display: block;
 	position: relative;
@@ -37,6 +36,7 @@ form{
 
 textarea{
 	border-radius: 7px;
+	width: 90%;
 }
 
 label{
@@ -44,7 +44,7 @@ label{
 }
 
 select{
-	width: 95%;
+	width: 90%;
 	border-radius: 3px;
 }
 
