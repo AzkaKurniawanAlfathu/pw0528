@@ -12,6 +12,7 @@ h1{
 	padding-top: 5%;
 	padding-left: 20%;
 }
+
 form{
 	display: block;
 	position: relative;
@@ -34,9 +35,13 @@ form{
 	border-bottom: 3px solid #00aced;
 }
 
+input[type=text],input[type=tel],input[type=email],input[type=password]{
+	width: 100%;
+}
+
 textarea{
 	border-radius: 7px;
-	width: 90%;
+	width: 100%;
 }
 
 label{
@@ -44,7 +49,7 @@ label{
 }
 
 select{
-	width: 90%;
+	width: 100%;
 	border-radius: 3px;
 }
 
