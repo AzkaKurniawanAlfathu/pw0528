@@ -9,3 +9,8 @@ td, th {
     text-align: left;
     padding: 8px;
 }
+
+img{
+	width: 80%;
+	height: 60%;
+}
