@@ -4,9 +4,30 @@
 	<title>Azka Kurniawan alfathu</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+	<script>
+		var app = angular.module("myApp", ["ngRoute"]);
+		app.config(function($routeProvider) {
+  		$routeProvider
+  		.when("/", {
+   		templateUrl : "main.htm"
+  		})
+  		.when("/about", {
+    	templateUrl : "about.htm"
+  		})
+  		.when("/product", {
+    	templateUrl : "product.htm"
+  		})
+  		.when("/contact", {
+    	templateUrl : "contact.htm"
+  		});
+		});
+	</script>
 </head>
 <body>
-	<div class="container">
+	<div ng-app="myApp" class="container">
 		<div class="row header">
 			<div class="col-12">
 				<h1>My Website</h1>
@@ -14,29 +35,18 @@
 			<div class="row menu">
 				<div class="col-9 offset-3">
 					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Product</a></li>
-						<li><a href="">Contact</a></li>
+						<li><a href="#/!">Home</a></li>
+						<li><a href="#!about">About</a></li>
+						<li><a href="#!">Product</a></li>
+						<li><a href="#!">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
+		<div class="ng-view"></div>
 	</div>
 
-	<div class="container">
-		<div class="row content">
-			<div class="col-4">
-				<div class="c1"><button></button></div>
-			</div>
-			<div class="col-4">
-				<div class="c1"><button></button></div>
-			</div>
-			<div class="col-4">
-				<div class="c1"><button></button></div>
-			</div>
-		</div>
-	</div>
+
 	
 	<div class="container">
 		<footer>
